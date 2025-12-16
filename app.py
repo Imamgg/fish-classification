@@ -79,7 +79,7 @@ class FishClassifier:
             7: "Spesies 7",
         }
 
-    def load_models(self, model_dir="model"):
+    def load_models(self, model_dir="models"):
         """Load all saved models and metadata"""
         try:
             # Load metadata
@@ -450,7 +450,7 @@ def main():
         # Load Models Section
         st.markdown("### 📦 Load Models")
         model_dir = st.text_input(
-            "Model Directory", value="model", help="Folder yang berisi model .pkl"
+            "Model Directory", value="models", help="Folder yang berisi model .pkl"
         )
 
         if st.button("🔄 Load Models", use_container_width=True):
