@@ -3,6 +3,7 @@ numpy
 pandas
 seaborn
 scipy
+scikit-learn
 opencv-python-headless
 Pillow
 matplotlib
