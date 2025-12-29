@@ -1,57 +1,13 @@
 {
-  "timestamp": "2025-12-15 08:14:50",
-  "dataset": "Fish Time Series Classification",
-  "ts_length": 463,
-  "n_classes": 7,
-  "class_labels": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-  ],
-  "models": {
-    "knn_euclidean": {
-      "type": "KNeighborsClassifier",
-      "n_neighbors": 1,
-      "metric": "euclidean",
-      "accuracy": 0.7828571428571428,
-      "file": "knn_euclidean.pkl"
-    },
-    "knn_dtw": {
-      "type": "KNeighborsTimeSeriesClassifier",
-      "n_neighbors": 1,
-      "metric": "dtw",
-      "accuracy": 0.8228571428571428,
-      "file": "knn_dtw.pkl",
-      "note": "Best performing model"
-    },
-    "random_forest": {
-      "type": "RandomForestClassifier",
-      "n_estimators": 100,
-      "max_depth": 10,
-      "accuracy": 0.6228571428571429,
-      "file": "random_forest.pkl",
-      "features": [
-        "mean",
-        "std",
-        "min",
-        "max",
-        "range",
-        "median",
-        "q25",
-        "q75",
-        "skewness",
-        "kurtosis",
-        "energy"
-      ]
-    }
-  },
-  "preprocessing": {
-    "method": "z-score normalization per time series",
-    "formula": "(X - mean) / std",
-    "note": "Apply normalization per sample (axis=0) before prediction"
-  }
+    "n_features": 463,
+    "classes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "accuracy": 0.7828571428571428
 }
